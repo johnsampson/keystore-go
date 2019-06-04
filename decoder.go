@@ -10,16 +10,16 @@ import (
 const defaultCertificateType = "X509"
 
 // ErrIo indicates i/o error
-var ErrIo = errors.New("keystore: invalid keystore format")
+var ErrIo = errors.New("keystore: i/o error")
 
 // ErrIncorrectMagic indicates incorrect file magic
-var ErrIncorrectMagic = errors.New("keystore: invalid keystore format")
+var ErrIncorrectMagic = errors.New("keystore: incorrect magic error")
 
 // ErrIncorrectVersion indicates incorrect keystore version format
-var ErrIncorrectVersion = errors.New("keystore: invalid keystore format")
+var ErrIncorrectVersion = errors.New("keystore: incorrect version error")
 
 // ErrIncorrectTag indicates incorrect keystore entry tag
-var ErrIncorrectTag = errors.New("keystore: invalid keystore format")
+var ErrIncorrectTag = errors.New("keystore: incorrect tag error")
 
 // ErrIncorrectPrivateKey indicates incorrect private key entry content
 var ErrIncorrectPrivateKey = errors.New("keystore: invalid private key format")
